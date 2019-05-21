@@ -1,0 +1,31 @@
+{
+  "name": "appointment-scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "__tests__/*",
+      "tests/*",
+      "node_modules/*"
+    ],
+    "watch": [
+      "package.json",
+      "src",
+      "app.js"
+    ],
+    "ext": "yaml,js,json"
+  }
+}
